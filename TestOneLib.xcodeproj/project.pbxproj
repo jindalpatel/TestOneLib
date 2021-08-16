@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		68597FBA26CA25B20039FCE9 /* TestOneLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68597FB926CA25B20039FCE9 /* TestOneLib.swift */; };
+		68597FC126CA26C40039FCE9 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68597FC026CA26C40039FCE9 /* SplunkMint.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		68597FB626CA25B20039FCE9 /* libTestOneLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestOneLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		68597FB926CA25B20039FCE9 /* TestOneLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneLib.swift; sourceTree = "<group>"; };
+		68597FC026CA26C40039FCE9 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68597FC126CA26C40039FCE9 /* SplunkMint.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 		68597FB826CA25B20039FCE9 /* TestOneLib */ = {
 			isa = PBXGroup;
 			children = (
+				68597FC026CA26C40039FCE9 /* SplunkMint.xcframework */,
 				68597FB926CA25B20039FCE9 /* TestOneLib.swift */,
 			);
 			path = TestOneLib;
@@ -249,6 +253,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/TestOneLib/SplunkMint.xcframework/ios-arm64_i386_x86_64-simulator\"";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -261,6 +266,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/TestOneLib/SplunkMint.xcframework/ios-arm64_armv7\"";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
